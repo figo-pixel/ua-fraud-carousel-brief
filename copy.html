@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UA Fraud Carousel — Full Copy &amp; Brief</title>
+<meta name="description" content="Go Mobile Indonesia — full final copy and designer brief for the 9-slide LinkedIn carousel on UA attribution fraud. Headlines, per-slide copy, post caption, alt text and deliverables.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UA Fraud Carousel — Full Copy & Brief">
+<meta property="og:description" content="Every slide's final copy, the post caption, alt text and deliverables. Pairs with the wireframe page.">
+<meta name="theme-color" content="#F58220">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14100E;
+  --paper:#FBF7F4;
+  --page:#EFEAE5;
+  --grey:#C7C1BC;
+  --grey-d:#8E8783;
+  --red:#D93B21;
+  --green:#2FA24A;
+  --orange:#F58220;
+  --mute:#7A736E;
+  --line:#DED7D1;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; background:var(--page); color:var(--ink);
+  font-family:'Figtree',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:920px;margin:0 auto;padding:56px 28px 120px;}
+a{color:var(--ink);}
+
+/* ---------- page nav ---------- */
+.pagenav{display:flex;gap:8px;align-items:center;margin-bottom:34px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;}
+.pagenav-here{background:var(--ink);color:var(--paper);border-radius:100px;padding:8px 16px;font-weight:700;}
+.pagenav-link{color:var(--mute);text-decoration:none;border:1px solid var(--line);border-radius:100px;padding:8px 16px;font-weight:700;transition:.15s;}
+.pagenav-link:hover{color:var(--ink);border-color:var(--ink);}
+
+/* ---------- masthead ---------- */
+.masthead{border-bottom:3px solid var(--ink);padding-bottom:28px;margin-bottom:12px;}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);}
+.masthead h1{font-size:clamp(30px,5vw,50px);font-weight:900;line-height:1.02;margin:14px 0 0;letter-spacing:-.02em;}
+.masthead .sub{margin-top:16px;font-size:16px;line-height:1.5;max-width:64ch;color:#3B3431;}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;}
+.meta span{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.04em;background:var(--paper);border:1px solid var(--line);border-radius:100px;padding:7px 14px;color:#3B3431;}
+.meta b{color:var(--ink);}
+
+/* ---------- sections ---------- */
+section{border-top:1px solid var(--line);padding:44px 0 6px;}
+.snum{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;color:var(--orange);text-transform:uppercase;font-weight:700;}
+h2.sh{font-size:30px;font-weight:900;letter-spacing:-.02em;margin:8px 0 22px;}
+p.lead{font-size:17px;line-height:1.6;color:#3B3431;max-width:64ch;margin:0 0 18px;}
+p.lead b{color:var(--ink);}
+
+/* angle box (from wireframe system) */
+.angle{padding:20px 24px;background:var(--ink);color:var(--paper);border-radius:14px;max-width:66ch;}
+.angle b{color:var(--orange);}
+.angle .lbl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;color:#9B938E;text-transform:uppercase;display:block;margin-bottom:8px;}
+.angle p{margin:0 0 12px;font-size:19px;font-weight:600;line-height:1.4;}
+.angle p:last-child{margin-bottom:0;}
+.angle .fine{font-size:15px;font-weight:400;color:#D9D2CD;line-height:1.55;}
+
+/* tables */
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:6px 0 8px;}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:340px;}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.45;}
+th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:700;}
+td.mono,code{font-family:'JetBrains Mono',monospace;}
+code{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:13px;}
+
+/* colour legend */
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 16px;}
+.sw{display:flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:100px;padding:7px 14px 7px 8px;font-size:13px;font-weight:600;}
+.sw i{width:16px;height:16px;border-radius:5px;display:block;}
+.rulelist{margin:0;padding-left:20px;font-size:15px;line-height:1.7;color:#3B3431;max-width:66ch;}
+.rulelist b{color:var(--ink);}
+
+/* slide cards */
+.slide-c{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin-bottom:16px;}
+.slide-c.priority{border:2px solid var(--orange);}
+.slide-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px;}
+.slide-idx{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:700;}
+.slide-idx .star{color:var(--orange);}
+.eyebrow-tag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;background:var(--ink);color:var(--paper);border-radius:100px;padding:5px 12px;font-weight:700;}
+.eyebrow-tag.none{background:transparent;color:var(--grey-d);border:1px dashed var(--line);}
+.slide-name{font-size:20px;font-weight:900;letter-spacing:-.01em;margin:2px 0 14px;}
+.copybox{background:#fff;border-left:4px solid var(--ink);border-radius:0 10px 10px 0;padding:14px 18px;font-size:19px;line-height:1.35;font-weight:800;letter-spacing:-.01em;}
+.wc{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;color:var(--mute);border:1px solid var(--line);border-radius:100px;padding:3px 10px;margin-left:8px;vertical-align:middle;}
+.block{margin-top:16px;}
+.block h5{margin:0 0 7px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);}
+.block p{margin:0;font-size:15px;line-height:1.55;color:#3B3431;}
+.block ul{margin:0;padding-left:18px;font-size:15px;line-height:1.6;color:#3B3431;}
+.block ul b,.block p b{color:var(--ink);}
+.othercopy{display:flex;flex-wrap:wrap;gap:7px;}
+.othercopy span{font-family:'JetBrains Mono',monospace;font-size:12px;background:var(--page);border:1px solid var(--line);border-radius:7px;padding:5px 10px;}
+.chiprow td .status{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.08em;padding:5px 12px;border-radius:7px;color:#fff;white-space:nowrap;}
+
+/* caption */
+.caption{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:8px 30px;}
+.caption .fold{border-bottom:2px dashed var(--orange);}
+.caption p{font-size:16px;line-height:1.62;color:#241f1c;max-width:68ch;}
+.caption p.hook{font-size:19px;font-weight:800;letter-spacing:-.01em;color:var(--ink);}
+.caption .arrow{font-weight:800;color:var(--ink);}
+.caption .tags{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--orange);font-weight:700;}
+.foldnote{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin:10px 0 0;}
+.stats-line{font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;color:var(--ink);line-height:1.7;}
+
+/* alternatives */
+.alt{counter-reset:alt;list-style:none;padding:0;margin:0;}
+.alt li{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 20px 16px 56px;margin-bottom:12px;position:relative;font-size:15px;line-height:1.55;color:#3B3431;}
+.alt li::before{counter-increment:alt;content:counter(alt);position:absolute;left:18px;top:16px;font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--orange);font-size:16px;}
+.alt li em{display:block;font-style:italic;color:var(--ink);font-weight:600;margin-bottom:6px;font-size:16px;}
+
+/* alt text list */
+.alttext{margin:0;padding-left:0;list-style:none;counter-reset:at;}
+.alttext li{position:relative;padding:12px 0 12px 46px;border-bottom:1px solid var(--line);font-size:15px;line-height:1.5;color:#3B3431;}
+.alttext li::before{counter-increment:at;content:counter(at,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--mute);font-size:13px;}
+
+/* deliverables */
+.deliver{list-style:none;padding:0;margin:0;}
+.deliver li{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:16px;}
+.deliver li .box{flex:none;width:22px;height:22px;border:2px solid var(--grey-d);border-radius:6px;margin-top:1px;}
+.dep{margin-top:20px;padding:16px 20px;background:var(--ink);color:var(--paper);border-radius:12px;font-size:15px;line-height:1.5;}
+.dep b{color:var(--orange);}
+
+.foot{margin-top:56px;border-top:3px solid var(--ink);padding-top:20px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--mute);letter-spacing:.04em;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="pagenav">
+  <a class="pagenav-link" href="index.html">← Wireframes</a>
+  <span class="pagenav-here">Full copy &amp; brief</span>
+</nav>
+
+<div class="masthead">
+  <div class="kicker">Go Mobile Indonesia · LinkedIn carousel · Full copy &amp; designer brief</div>
+  <h1>UA attribution fraud<br>— full copy</h1>
+  <p class="sub">The complete written brief that pairs with the wireframes. Every slide below matches a frame on the <a href="index.html">wireframe page</a>. Copy is final, pending review.</p>
+  <div class="meta">
+    <span><b>Client</b> · Go Mobile Indonesia (own channel)</span>
+    <span><b>Format</b> · LinkedIn carousel · 9 slides · 1080 × 1350</span>
+    <span><b>Status</b> · copy final, pending review</span>
+  </div>
+</div>
+
+<!-- 1. THE ANGLE -->
+<section>
+  <div class="snum">01</div>
+  <h2 class="sh">The angle</h2>
+  <div class="angle">
+    <span class="lbl">The angle</span>
+    <p>Not the bot-farm story. <b>The traffic was real, the installs were real — only the credit was fake.</b> Someone was billing for users who were already installing.</p>
+    <p class="fine">This is the whole reason the post works. Most ad-fraud content shows warehouses of phones. This case explicitly <b style="color:#fff">ruled out</b> device farms and emulators, which makes the reveal genuinely counterintuitive for a marketing audience and makes each reader do arithmetic on their own budget.</p>
+    <p class="fine">Everything in the design serves that reveal. Slide 3 is the slide that carries it; if only one slide gets extra attention, it is that one.</p>
+  </div>
+  <p class="lead" style="margin-top:18px;"><b>Audience:</b> client-side UA and growth managers, brand and performance marketers, agency leads. Assume smart, sceptical, scrolling on a phone, allergic to agency self-congratulation.</p>
+</section>
+
+<!-- 2. SPECIFICATIONS -->
+<section>
+  <div class="snum">02</div>
+  <h2 class="sh">Specifications</h2>
+  <div class="tscroll">
+  <table>
+    <tr><th>Item</th><th>Value</th></tr>
+    <tr><td>Canvas</td><td>1080 × 1350 px (4:5)</td></tr>
+    <tr><td>Slides</td><td>9</td></tr>
+    <tr><td>Safe margin</td><td>80 px all sides</td></tr>
+    <tr><td>Export</td><td>PNG, plus a single combined PDF for upload</td></tr>
+    <tr><td>Extra export</td><td>Slide 1 at 1200 × 627 px for link-preview / repost use</td></tr>
+    <tr><td>Brand system</td><td>Existing Go Mobile carousel system — sparkle background texture, wordmark top-right, rounded card language, heavy geometric display face</td></tr>
+    <tr><td>Spelling</td><td>British English throughout (anonymised, cannibalised, relabelled). Match the source deck.</td></tr>
+  </table>
+  </div>
+</section>
+
+<!-- 3. COLOUR SYSTEM -->
+<section>
+  <div class="snum">03</div>
+  <h2 class="sh">Colour system — binding</h2>
+  <p class="lead">Colour carries information in this set. It is not decoration.</p>
+  <div class="legend">
+    <span class="sw"><i style="background:#C7C1BC"></i> Grey · <code>#C7C1BC</code> · normal / unproven supply</span>
+    <span class="sw"><i style="background:#D93B21"></i> Red · <code>#D93B21</code> · contaminated</span>
+    <span class="sw"><i style="background:#2FA24A"></i> Green · <code>#2FA24A</code> · proven / genuine</span>
+    <span class="sw"><i style="background:#F58220"></i> Orange · <code>#F58220</code> · Go Mobile intervention</span>
+    <span class="sw"><i style="background:#14100E"></i> Ink · <code>#14100E</code> · type</span>
+    <span class="sw"><i style="background:#FBF7F4;border:1px solid #DED7D1"></i> Paper · <code>#FBF7F4</code> · background</span>
+  </div>
+  <ul class="rulelist">
+    <li>Nothing outside this palette. No blue, no magenta, no rainbow stat cards.</li>
+    <li><b>Orange does not appear until slide 5.</b> Orange means <em>we act</em>, and slide 5 is where we act. Slides 1–4 are the problem; they stay grey, red and ink.</li>
+    <li>A reader should be able to learn this language by slide 3 and then read slides 4–9 without the body copy.</li>
+  </ul>
+  <p class="lead" style="margin-top:16px;font-size:15px;">The previous version of this carousel used five colours on one slide with no meaning attached to any of them. That is the main thing being corrected here.</p>
+</section>
+
+<!-- 4. COPY RULES -->
+<section>
+  <div class="snum">04</div>
+  <h2 class="sh">Copy rules</h2>
+  <ul class="rulelist">
+    <li><b>Maximum ~20 words per slide.</b> Word counts are given on each slide below. If a slide needs a paragraph, the device is wrong — flag it rather than shrinking type.</li>
+    <li>No caveats, disclaimers or methodology notes on any slide. All of it lives in the caption (section 06).</li>
+    <li>Sentence case in headlines. Full stops stay — they set the flat, declarative tone the case needs.</li>
+    <li>Numbers are labels, not headlines, except on slides 7 and 9.</li>
+  </ul>
+</section>
+
+<!-- 5. SLIDE BY SLIDE -->
+<section>
+  <div class="snum">05</div>
+  <h2 class="sh">Slide by slide</h2>
+
+  <!-- S1 -->
+  <div class="slide-c">
+    <div class="slide-head"><span class="slide-idx">Slide 1 · Hook</span><span class="eyebrow-tag none">no eyebrow</span></div>
+    <div class="slide-name">The dot grid</div>
+    <div class="block"><h5>Headline <span class="wc">10 words</span></h5>
+      <div class="copybox">1 in 5 paid installs wasn't caused by the ad.</div></div>
+    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>Footer: CASE STUDY / MOBILE USER ACQUISITION</span></div></div>
+    <div class="block"><h5>Device</h5><p>100 rounded squares in a 10 × 10 grid, 22 of them red, scattered rather than clustered. Grid centred, roughly 820 px wide, occupying the lower two-thirds.</p></div>
+    <div class="block"><h5>Notes</h5><ul>
+      <li>This is the feed thumbnail. It must work at 400 px wide with the headline unreadable — the red-among-grey pattern alone carries it.</li>
+      <li>No subline, no stat card, no 22.2% figure. The number is held back for slide 9.</li>
+      <li>Dots may become simple phone glyphs if preferred, but silhouettes must be identical so only colour differs.</li>
+    </ul></div>
+  </div>
+
+  <!-- S2 -->
+  <div class="slide-c">
+    <div class="slide-head"><span class="slide-idx">Slide 2 · The trap</span><span class="eyebrow-tag">THE TRAP</span></div>
+    <div class="slide-name">One bar splitting into sixty</div>
+    <div class="block"><h5>Headline <span class="wc">4 words</span></h5>
+      <div class="copybox">The average looked fine.</div></div>
+    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>Bar label: NETWORK AVERAGE · CPI ON TARGET</span><span>Footer: 60+ placements behind one source name</span></div></div>
+    <div class="block"><h5>Device</h5><p>One calm grey bar across the top — the number the client was reading — fracturing downward into ~60 thin placement bars of uneven height, 10 of them red.</p></div>
+    <div class="block"><h5>Notes</h5><ul>
+      <li>Red bars noticeably taller than grey ones. Contamination was concentrated, not evenly spread.</li>
+      <li>The fan lines should read as a shatter, not an org chart.</li>
+      <li>This slide <b>is</b> the source-level-blending insight. It replaces two paragraphs of explanation in the original deck.</li>
+    </ul></div>
+  </div>
+
+  <!-- S3 -->
+  <div class="slide-c priority">
+    <div class="slide-head"><span class="slide-idx"><span class="star">★</span> Slide 3 · The mechanism</span><span class="eyebrow-tag">THE MECHANISM</span></div>
+    <div class="slide-name">The explainer — priority slide</div>
+    <div class="block"><h5>Headline <span class="wc">8 words</span></h5>
+      <div class="copybox">The traffic was real. The credit was fake.</div></div>
+    <div class="block"><h5>Other copy — labels only</h5><div class="othercopy"><span>Real user</span><span>Real install</span><span>claimed credit</span><span>Ad click — fabricated evidence</span></div></div>
+    <div class="block"><h5>Device</h5><p>User → install, both ticked green, joined by a solid green line. A dashed red arrow enters from below and attaches itself to the install, with a warning mark <b>on the connection</b>.</p></div>
+    <div class="block"><h5>Notes</h5><ul>
+      <li>The red mark sits on the <em>link</em>. Never on the user, never on the install. Putting it on either one inverts the entire argument.</li>
+      <li>Green elements solid and confident; the red click dashed and intrusive.</li>
+      <li>Test: a non-marketer should understand this in three seconds.</li>
+    </ul></div>
+  </div>
+
+  <!-- S4 -->
+  <div class="slide-c">
+    <div class="slide-head"><span class="slide-idx">Slide 4 · The speed</span><span class="eyebrow-tag">THE SPEED</span></div>
+    <div class="slide-name">The rotation loop</div>
+    <div class="block"><h5>Headline <span class="wc">11 words</span></h5>
+      <div class="copybox">Block it, and it returns tomorrow under a new name.</div></div>
+    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>Wave 1 · D1 16% · D2 42%</span><span>Wave 2 · D1 19% · D2 41%</span><span>Placement A</span><span>BLOCKED</span><span>24h</span><span>Placement B</span></div></div>
+    <div class="block"><h5>Device</h5><p>Two Day 1 → Day 2 bar pairs on top (grey → red, roughly doubling). Below: Placement A → BLOCKED → 24h → Placement B, with a dashed arrow looping back to the start so the cycle is visibly closed.</p></div>
+    <div class="block"><h5>Notes</h5><ul>
+      <li>The loop arrow is the point. It should read as futility, not as a workflow.</li>
+      <li>Both waves identical in construction so the repetition is obvious.</li>
+    </ul></div>
+  </div>
+
+  <!-- S5 -->
+  <div class="slide-c">
+    <div class="slide-head"><span class="slide-idx">Slide 5 · What we did</span><span class="eyebrow-tag">WHAT WE DID</span></div>
+    <div class="slide-name">The gate</div>
+    <div class="block"><h5>Headline <span class="wc">10 words</span></h5>
+      <div class="copybox">We stopped blocking what fails. We buy only what passes.</div></div>
+    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>DAILY CHECK</span><span>Proven placements · FULL BUDGET</span><span>Unproven supply · CAPPED</span><span>Footer: Nothing enters the main buy until it has proven itself</span></div></div>
+    <div class="block"><h5>Device</h5><p>Mixed supply enters from the left → passes through an orange <b>Daily check</b> gate → exits into two lanes: a wide green PROVEN / FULL BUDGET lane and a narrow grey UNPROVEN / CAPPED lane.</p></div>
+    <div class="block"><h5>Notes</h5><ul>
+      <li>Lane <em>width</em> carries the budget split. The green lane is visibly wider — do not equalise them for tidiness.</li>
+      <li>First appearance of orange in the set.</li>
+      <li>No thresholds, no test logic, no rule names. Method stays proprietary.</li>
+    </ul></div>
+  </div>
+
+  <!-- S6 -->
+  <div class="slide-c">
+    <div class="slide-head"><span class="slide-idx">Slide 6 · The result</span><span class="eyebrow-tag">THE RESULT</span></div>
+    <div class="slide-name">The actual chart</div>
+    <div class="block"><h5>Headline <span class="wc">6 words</span></h5>
+      <div class="copybox">Then it held. 14 clean days.</div></div>
+    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>RESTRUCTURE (marker)</span><span>two waves</span><span>14 consecutive clean days</span><span>Footer: Daily fraud rate · 21 delivery days</span></div></div>
+    <div class="block"><h5>Device</h5><p>The real daily fraud-rate line, occupying ~70% of the slide. Red line before the orange RESTRUCTURE marker, green after, flat along the floor.</p></div>
+    <div class="block"><h5>Notes</h5><ul>
+      <li><b>Use the real daily values from the source deck.</b> The wireframe line is a shape sketch only — two spikes, marker, flat. Ask for the export if it isn't in the working files.</li>
+      <li>The line changing colour at the marker does the storytelling. No stat cards around it.</li>
+      <li>Do not smooth the spikes into a gentle curve. The jaggedness is the evidence.</li>
+    </ul></div>
+  </div>
+
+  <!-- S7 -->
+  <div class="slide-c">
+    <div class="slide-head"><span class="slide-idx">Slide 7 · The twist</span><span class="eyebrow-tag">THE TWIST</span></div>
+    <div class="slide-name">Volume went up</div>
+    <div class="block"><h5>Headline <span class="wc">9 words</span></h5>
+      <div class="copybox">Removing the fraud didn't cost volume. It added volume.</div></div>
+    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>525 BEFORE → 588 AFTER</span><span>genuine installs per day</span><span>−31% COST PER INSTALL</span><span>−47% COST PER ACTION</span></div></div>
+    <div class="block"><h5>Device</h5><p>525 → 588 set enormous and centred, "after" noticeably larger and green. The two percentage figures demoted to small outlined cards underneath.</p></div>
+    <div class="block"><h5>Notes</h5><ul>
+      <li>This slide exists to kill the obvious objection — <em>you just cut spend</em>. The size difference between 525 and 588 does that job. Do not set them at equal weight.</li>
+      <li>Percentage cards stay outlined and quiet. Support, not headline.</li>
+      <li>Use the proper minus sign (−), not a hyphen.</li>
+    </ul></div>
+  </div>
+
+  <!-- S8 -->
+  <div class="slide-c">
+    <div class="slide-head"><span class="slide-idx">Slide 8 · The restraint</span><span class="eyebrow-tag">THE RESTRAINT</span></div>
+    <div class="slide-name">The audit checklist</div>
+    <div class="block"><h5>Headline <span class="wc">7 words</span></h5>
+      <div class="copybox">We named only what the evidence carried.</div></div>
+    <div class="block"><h5>Other copy — four rows</h5>
+      <div class="tscroll">
+      <table class="chiprow">
+        <tr><th>Row</th><th>Status chip</th><th>Chip colour</th></tr>
+        <tr><td>Manufactured attribution</td><td><span class="status" style="background:var(--red)">CONFIRMED</span></td><td>Red</td></tr>
+        <tr><td>Device farms &amp; emulators</td><td><span class="status" style="background:var(--grey-d)">RULED OUT</span></td><td>Grey</td></tr>
+        <tr><td>Organic cannibalisation</td><td><span class="status" style="background:var(--grey-d)">RULED OUT</span></td><td>Grey</td></tr>
+        <tr><td>Inventory type</td><td><span class="status" style="background:var(--orange)">OPEN QUESTION</span></td><td>Orange</td></tr>
+      </table>
+      </div></div>
+    <div class="block"><h5>Device</h5><p>Four-row checklist, monospace status chips right-aligned.</p></div>
+    <div class="block"><h5>Notes</h5><ul>
+      <li>Publishing an open question is what makes the rest believable. Keep that chip fully visible — do not soften it or drop it to fit.</li>
+      <li>Supporting detail (the 1.7% organic band, signature matching) goes in the caption.</li>
+    </ul></div>
+  </div>
+
+  <!-- S9 -->
+  <div class="slide-c">
+    <div class="slide-head"><span class="slide-idx">Slide 9 · Close</span><span class="eyebrow-tag none">no eyebrow</span></div>
+    <div class="slide-name">The bookend</div>
+    <div class="block"><h5>Headline <span class="wc">6 words</span></h5>
+      <div class="copybox">22.2% → 0.96% in three weeks.</div></div>
+    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>Footer: Same audit runs on any account with raw attribution data.</span><span>CTA pill: Talk to us</span></div></div>
+    <div class="block"><h5>Device</h5><p>The identical 100-dot grid from slide 1 — same position, same size — now with a single red dot.</p></div>
+    <div class="block"><h5>Notes</h5><ul>
+      <li><b>Protect this slide.</b> It is the cheapest element in the set to build and the only one that closes the story visually.</li>
+      <li>Grid position and dot size must match slide 1 <em>exactly</em>, so a viewer swiping back feels the difference.</li>
+      <li>Place the surviving red dot somewhere no red dot appeared on slide 1 — one survivor, not a leftover.</li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- 6. POST CAPTION -->
+<section>
+  <div class="snum">06</div>
+  <h2 class="sh">Post caption</h2>
+  <p class="lead">The first two lines are what show before “…see more” on mobile. They carry the whole hook.</p>
+  <div class="caption">
+    <p class="hook fold">No bots. No device farms.</p>
+    <p class="fold">The users were real. The installs were real. 22.2% of them just weren't caused by the ad the client was paying for.</p>
+    <p class="foldnote">↑ everything above the dashed line shows before “…see more”</p>
+    <p>We audited 13,000+ installs across 21 delivery days on one paid channel. Volume was on plan. Cost per install sat inside target. Nothing in standard reporting flagged a problem — because the network aggregates hundreds of publishers behind a single source name, and the average blended contaminated supply with clean supply into one acceptable-looking number.</p>
+    <p>Underneath that average, 10 placements out of 60+ were manufacturing click evidence to claim credit for installs that were happening anyway.</p>
+    <p>Two things made it survive three weeks:</p>
+    <p><span class="arrow">→</span> Contamination arrived on day two, twice. A placement would open quietly, clear a first-day review, then take most of the daily budget the next day at double the rate. Weekly review misses the day the money goes.</p>
+    <p><span class="arrow">→</span> Blocking didn't end it. The same supply returned under fresh identifiers inside 24 hours. A blocklist is a record of what already cost you money, not a defence.</p>
+    <p>So we stopped blocking what fails and started buying only what passes: a separate campaign restricted to placements that cleared every test across multiple days at real volume, with daily placement-level checks and new supply capped until it proves itself.</p>
+    <p class="stats-line">Fraud rate: 22.2% → 0.96%, then 14 consecutive clean days.<br>Cost per install: −31%. Cost per target in-app action: −47%.<br>Genuine installs per day: 525 → 588.</p>
+    <p>That last number matters most. Total delivery came down slightly, but real installs went up 12% — because the volume we removed was never real. Same network. Same contract. No pause in delivery.</p>
+    <p>What we did not claim: organic was not being cannibalised (daily organic held inside a 1.7% band throughout), and there were no device farms or emulators — hardware, network and location signatures matched genuine users across the whole buy. The problem was attribution, not fabricated devices. Post-restructure supply does show engagement patterns worth a direct conversation with the network about inventory type; we reported that as an open question rather than a finding.</p>
+    <p>A claim that overreaches gets dismissed along with everything attached to it.</p>
+    <p>Figures come from the client's own measurement platform, audited by us at raw event level. Engagement anonymised. Detection methodology, test thresholds and monitoring rules are proprietary and not reproduced here.</p>
+    <p>The same audit runs on any account with raw attribution data, usually inside a week. If your reporting is weekly and your supply is aggregated, it is worth knowing what is underneath the average.</p>
+    <p class="tags">#UserAcquisition #AdFraud #MobileMarketing #PerformanceMarketing #ProgrammaticAdvertising</p>
+  </div>
+
+  <h5 style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:28px 0 12px;">Alternative openings</h5>
+  <p class="lead" style="font-size:15px;">If the recommended opener feels too blunt for the page's usual voice:</p>
+  <ol class="alt">
+    <li><em>Your weekly UA report is five days behind a problem that turns in 24 hours.</em>Leads on speed instead of the reveal. Safer, less distinctive.</li>
+    <li><em>We removed 96% of the attribution fraud from a live channel without changing network, renegotiating the contract, or pausing delivery.</em>Leads on the result. Strongest for existing clients, weakest for cold reach.</li>
+    <li><em>One in five installs on this channel was already going to happen. Someone was billing for them anyway.</em>Closest in spirit to the recommended version, slightly more pointed.</li>
+  </ol>
+</section>
+
+<!-- 7. ALT TEXT -->
+<section>
+  <div class="snum">07</div>
+  <h2 class="sh">Alt text</h2>
+  <p class="lead">LinkedIn allows alt text per carousel image. Supply these with the export.</p>
+  <ol class="alttext">
+    <li>Grid of 100 squares, 22 marked red, showing one in five paid installs was not caused by the ad.</li>
+    <li>A single bar labelled network average splitting into 60 placement bars, 10 of them red.</li>
+    <li>Diagram: a real user and a real install linked in green, with a fabricated ad click attaching itself to the install, flagged red.</li>
+    <li>Two charts showing fraud rates roughly doubling from day one to day two, and a blocked placement returning under a new name after 24 hours.</li>
+    <li>Diagram: placements passing through a daily check, splitting into a wide proven lane at full budget and a narrow unproven lane, capped.</li>
+    <li>Line chart of daily fraud rate: two spikes, a restructure marker, then 14 flat days below one percent.</li>
+    <li>Genuine installs per day rising from 525 to 588, with cost per install down 31% and cost per action down 47%.</li>
+    <li>Audit checklist: manufactured attribution confirmed, device farms ruled out, organic cannibalisation ruled out, inventory type an open question.</li>
+    <li>The same grid of 100 squares, now with a single red square, above the figure 22.2% to 0.96%.</li>
+  </ol>
+</section>
+
+<!-- 8. DELIVERABLES -->
+<section>
+  <div class="snum">08</div>
+  <h2 class="sh">Deliverables</h2>
+  <ul class="deliver">
+    <li><span class="box"></span> 9 × PNG, 1080 × 1350 px</li>
+    <li><span class="box"></span> 1 × combined PDF for the LinkedIn upload</li>
+    <li><span class="box"></span> Slide 1 at 1200 × 627 px</li>
+    <li><span class="box"></span> Editable source file in the shared drive</li>
+    <li><span class="box"></span> Alt text pasted into the design ticket</li>
+  </ul>
+  <div class="dep"><b>Open dependency:</b> real daily fraud-rate values for slide 6, from the source deck's chart data.</div>
+</section>
+
+<div class="foot">Go Mobile Indonesia · UA attribution fraud carousel · full copy &amp; designer brief · pairs with <a href="index.html" style="color:var(--orange)">the wireframes</a></div>
+
+</div>
+</body>
+</html>
