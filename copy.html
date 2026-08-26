@@ -4,35 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>UA Fraud Carousel — Full Copy &amp; Brief</title>
-<meta name="description" content="Go Mobile Indonesia — full final copy and designer brief for the 9-slide LinkedIn carousel on UA attribution fraud. Headlines, per-slide copy, post caption, alt text and deliverables.">
+<meta name="description" content="Go Mobile Indonesia — full designer brief for the 9-slide LinkedIn carousel on UA attribution fraud. Each slide's visual and copy side by side, numbers verified against the source deck.">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="UA Fraud Carousel — Full Copy & Brief">
-<meta property="og:description" content="Every slide's final copy, the post caption, alt text and deliverables. Pairs with the wireframe page.">
+<meta property="og:description" content="Visual and copy side by side for every slide, plus the post caption, alt text and deliverables. Numbers verified against the deck.">
 <meta name="theme-color" content="#F58220">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#14100E;
-  --paper:#FBF7F4;
-  --page:#EFEAE5;
-  --grey:#C7C1BC;
-  --grey-d:#8E8783;
-  --red:#D93B21;
-  --green:#2FA24A;
-  --orange:#F58220;
-  --mute:#7A736E;
-  --line:#DED7D1;
+  --ink:#14100E; --paper:#FBF7F4; --page:#EFEAE5;
+  --grey:#C7C1BC; --grey-d:#8E8783; --red:#D93B21; --green:#2FA24A;
+  --orange:#F58220; --mute:#7A736E; --line:#DED7D1;
+  --scale:0.37037;
 }
 *{box-sizing:border-box;}
-body{
-  margin:0; background:var(--page); color:var(--ink);
-  font-family:'Figtree',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  -webkit-font-smoothing:antialiased;
-}
-.wrap{max-width:920px;margin:0 auto;padding:56px 28px 120px;}
+body{margin:0;background:var(--page);color:var(--ink);font-family:'Figtree',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:1160px;margin:0 auto;padding:56px 28px 120px;}
 a{color:var(--ink);}
 
 /* ---------- page nav ---------- */
@@ -45,20 +35,21 @@ a{color:var(--ink);}
 .masthead{border-bottom:3px solid var(--ink);padding-bottom:28px;margin-bottom:12px;}
 .kicker{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);}
 .masthead h1{font-size:clamp(30px,5vw,50px);font-weight:900;line-height:1.02;margin:14px 0 0;letter-spacing:-.02em;}
-.masthead .sub{margin-top:16px;font-size:16px;line-height:1.5;max-width:64ch;color:#3B3431;}
-.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;}
+.masthead .sub{margin-top:16px;font-size:16px;line-height:1.5;max-width:66ch;color:#3B3431;}
+.verified{display:inline-flex;align-items:center;gap:8px;margin-top:18px;background:var(--green);color:#fff;border-radius:100px;padding:8px 16px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
 .meta span{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.04em;background:var(--paper);border:1px solid var(--line);border-radius:100px;padding:7px 14px;color:#3B3431;}
 .meta b{color:var(--ink);}
 
-/* ---------- sections ---------- */
+/* ---------- generic sections ---------- */
 section{border-top:1px solid var(--line);padding:44px 0 6px;}
 .snum{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;color:var(--orange);text-transform:uppercase;font-weight:700;}
 h2.sh{font-size:30px;font-weight:900;letter-spacing:-.02em;margin:8px 0 22px;}
-p.lead{font-size:17px;line-height:1.6;color:#3B3431;max-width:64ch;margin:0 0 18px;}
+p.lead{font-size:17px;line-height:1.6;color:#3B3431;max-width:66ch;margin:0 0 18px;}
 p.lead b{color:var(--ink);}
 
-/* angle box (from wireframe system) */
-.angle{padding:20px 24px;background:var(--ink);color:var(--paper);border-radius:14px;max-width:66ch;}
+/* angle box */
+.angle{padding:20px 24px;background:var(--ink);color:var(--paper);border-radius:14px;max-width:70ch;}
 .angle b{color:var(--orange);}
 .angle .lbl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;color:#9B938E;text-transform:uppercase;display:block;margin-bottom:8px;}
 .angle p{margin:0 0 12px;font-size:19px;font-weight:600;line-height:1.4;}
@@ -70,44 +61,93 @@ p.lead b{color:var(--ink);}
 table{width:100%;border-collapse:collapse;font-size:15px;min-width:340px;}
 th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.45;}
 th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:700;}
-td.mono,code{font-family:'JetBrains Mono',monospace;}
-code{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:13px;}
+td.num{font-family:'JetBrains Mono',monospace;font-weight:700;}
+code{font-family:'JetBrains Mono',monospace;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:13px;}
 
 /* colour legend */
 .legend{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 16px;}
 .sw{display:flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:100px;padding:7px 14px 7px 8px;font-size:13px;font-weight:600;}
 .sw i{width:16px;height:16px;border-radius:5px;display:block;}
-.rulelist{margin:0;padding-left:20px;font-size:15px;line-height:1.7;color:#3B3431;max-width:66ch;}
+.rulelist{margin:0;padding-left:20px;font-size:15px;line-height:1.7;color:#3B3431;max-width:70ch;}
 .rulelist b{color:var(--ink);}
 
-/* slide cards */
-.slide-c{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin-bottom:16px;}
-.slide-c.priority{border:2px solid var(--orange);}
-.slide-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px;}
-.slide-idx{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:700;}
-.slide-idx .star{color:var(--orange);}
-.eyebrow-tag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;background:var(--ink);color:var(--paper);border-radius:100px;padding:5px 12px;font-weight:700;}
-.eyebrow-tag.none{background:transparent;color:var(--grey-d);border:1px dashed var(--line);}
-.slide-name{font-size:20px;font-weight:900;letter-spacing:-.01em;margin:2px 0 14px;}
-.copybox{background:#fff;border-left:4px solid var(--ink);border-radius:0 10px 10px 0;padding:14px 18px;font-size:19px;line-height:1.35;font-weight:800;letter-spacing:-.01em;}
-.wc{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;color:var(--mute);border:1px solid var(--line);border-radius:100px;padding:3px 10px;margin-left:8px;vertical-align:middle;}
-.block{margin-top:16px;}
+/* ================= SIDE-BY-SIDE SLIDE ROWS ================= */
+.srow{display:grid;grid-template-columns:400px 1fr;gap:38px;padding:36px 0;border-top:1px solid var(--line);align-items:start;}
+.srow>*{min-width:0;}
+.srow:first-of-type{border-top:none;}
+@media(max-width:900px){.srow{grid-template-columns:1fr;gap:24px;}}
+
+.frame-col{position:sticky;top:20px;}
+@media(max-width:900px){.frame-col{position:static;}}
+/* shrink the fixed slide frame so it never overflows a narrow screen */
+@media(max-width:480px){
+  :root{--scale:0.2685;}
+  .frame-col .frame{width:290px;height:363px;}
+}
+.frame{width:400px;max-width:100%;height:500px;overflow:hidden;border-radius:10px;box-shadow:0 10px 30px rgba(20,16,14,.13);position:relative;background:var(--paper);}
+.slide{width:1080px;height:1350px;transform:scale(var(--scale));transform-origin:top left;background:var(--paper);position:relative;padding:80px;display:flex;flex-direction:column;}
+.frame .cap{position:absolute;bottom:0;left:0;right:0;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;background:rgba(20,16,14,.86);color:#fff;padding:6px 10px;z-index:2;}
+
+/* slide interior primitives (1080-space) */
+.eyebrow{display:inline-block;background:var(--orange);color:#fff;font-size:24px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:12px 26px;border-radius:100px;}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:56px;}
+.logo{font-size:34px;font-weight:900;letter-spacing:-.02em;}
+.logo span{color:var(--orange);}
+.h{font-size:92px;line-height:.98;font-weight:900;letter-spacing:-.025em;margin:0;}
+.h.sm{font-size:74px;}
+.subx{font-size:34px;line-height:1.3;color:var(--mute);font-weight:600;margin:26px 0 0;}
+.stage{flex:1;display:flex;flex-direction:column;justify-content:center;}
+.footline{font-family:'JetBrains Mono',monospace;font-size:20px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey-d);}
+.mono{font-family:'JetBrains Mono',monospace;}
+.dots{display:grid;grid-template-columns:repeat(10,60px);gap:26px;justify-content:center;}
+.dot{width:60px;height:60px;border-radius:16px;background:var(--grey);}
+.dot.bad{background:var(--red);}
+.avgbar{height:96px;border-radius:14px;background:var(--grey);display:flex;align-items:center;padding:0 30px;font-size:26px;font-weight:800;letter-spacing:.08em;color:#fff;font-family:'JetBrains Mono',monospace;}
+.fan{height:110px;position:relative;}
+.bars{display:flex;align-items:flex-end;gap:7px;height:300px;}
+.bars i{flex:1;background:var(--grey);border-radius:3px;display:block;}
+.bars i.bad{background:var(--red);}
+.node{border:5px solid var(--green);border-radius:20px;padding:26px 30px;font-size:32px;font-weight:800;display:flex;align-items:center;gap:16px;background:#fff;}
+.node .tick{width:44px;height:44px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-size:26px;}
+.badnode{border:5px dashed var(--red);border-radius:20px;padding:24px 30px;font-size:30px;font-weight:800;color:var(--red);background:#fff;display:inline-flex;align-items:center;gap:14px;}
+.lane{border-radius:16px;padding:26px 30px;font-size:30px;font-weight:800;color:#fff;display:flex;justify-content:space-between;align-items:center;}
+.chip{font-family:'JetBrains Mono',monospace;font-size:22px;letter-spacing:.1em;padding:10px 18px;border-radius:100px;}
+.crow{display:flex;justify-content:space-between;align-items:center;padding:34px 0;border-bottom:3px solid var(--line);}
+.crow .t{font-size:38px;font-weight:800;}
+.status{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;letter-spacing:.1em;padding:12px 22px;border-radius:8px;color:#fff;white-space:nowrap;}
+
+/* ---------- copy column ---------- */
+.copy-col .idx{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:700;}
+.copy-col .idx .star{color:var(--orange);}
+.copy-col h3{margin:4px 0 0;font-size:23px;font-weight:900;letter-spacing:-.01em;}
+.desc{margin:12px 0 0;font-size:16px;line-height:1.55;color:#241f1c;border-left:3px solid var(--orange);padding-left:16px;}
+.block{margin-top:18px;}
 .block h5{margin:0 0 7px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);}
+.copybox{background:#fff;border-left:4px solid var(--ink);border-radius:0 10px 10px 0;padding:14px 18px;font-size:20px;line-height:1.32;font-weight:800;letter-spacing:-.01em;}
+.wc{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;color:var(--mute);border:1px solid var(--line);border-radius:100px;padding:3px 10px;margin-left:8px;vertical-align:middle;}
 .block p{margin:0;font-size:15px;line-height:1.55;color:#3B3431;}
 .block ul{margin:0;padding-left:18px;font-size:15px;line-height:1.6;color:#3B3431;}
 .block ul b,.block p b{color:var(--ink);}
 .othercopy{display:flex;flex-wrap:wrap;gap:7px;}
 .othercopy span{font-family:'JetBrains Mono',monospace;font-size:12px;background:var(--page);border:1px solid var(--line);border-radius:7px;padding:5px 10px;}
-.chiprow td .status{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.08em;padding:5px 12px;border-radius:7px;color:#fff;white-space:nowrap;}
+.deckbox{margin-top:16px;background:var(--ink);border-radius:12px;padding:16px 18px;}
+.deckbox h5{color:#9B938E;margin-bottom:10px;}
+.deckbox table{min-width:0;}
+.deckbox th,.deckbox td{border-color:#332c28;color:#EFEAE5;font-size:14px;padding:8px 10px;}
+.deckbox th{color:#9B938E;}
+.deckbox td.num{color:#fff;}
+.deckstats{display:flex;flex-wrap:wrap;gap:8px;}
+.deckstats .s{background:var(--ink);color:var(--paper);border-radius:10px;padding:10px 14px;font-family:'JetBrains Mono',monospace;}
+.deckstats .s b{display:block;font-size:22px;color:#fff;}
+.deckstats .s span{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9B938E;}
 
 /* caption */
 .caption{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:8px 30px;}
-.caption .fold{border-bottom:2px dashed var(--orange);}
-.caption p{font-size:16px;line-height:1.62;color:#241f1c;max-width:68ch;}
+.caption p{font-size:16px;line-height:1.62;color:#241f1c;max-width:70ch;}
 .caption p.hook{font-size:19px;font-weight:800;letter-spacing:-.01em;color:var(--ink);}
 .caption .arrow{font-weight:800;color:var(--ink);}
 .caption .tags{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--orange);font-weight:700;}
-.foldnote{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin:10px 0 0;}
+.foldnote{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin:10px 0 0;border-top:2px dashed var(--orange);padding-top:10px;}
 .stats-line{font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;color:var(--ink);line-height:1.7;}
 
 /* alternatives */
@@ -125,8 +165,8 @@ code{background:var(--paper);border:1px solid var(--line);border-radius:6px;padd
 .deliver{list-style:none;padding:0;margin:0;}
 .deliver li{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:16px;}
 .deliver li .box{flex:none;width:22px;height:22px;border:2px solid var(--grey-d);border-radius:6px;margin-top:1px;}
-.dep{margin-top:20px;padding:16px 20px;background:var(--ink);color:var(--paper);border-radius:12px;font-size:15px;line-height:1.5;}
-.dep b{color:var(--orange);}
+.dep{margin-top:20px;padding:16px 20px;background:var(--green);color:#fff;border-radius:12px;font-size:15px;line-height:1.5;}
+.dep b{color:#fff;}
 
 .foot{margin-top:56px;border-top:3px solid var(--ink);padding-top:20px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--mute);letter-spacing:.04em;}
 </style>
@@ -141,47 +181,45 @@ code{background:var(--paper);border:1px solid var(--line);border-radius:6px;padd
 
 <div class="masthead">
   <div class="kicker">Go Mobile Indonesia · LinkedIn carousel · Full copy &amp; designer brief</div>
-  <h1>UA attribution fraud<br>— full copy</h1>
-  <p class="sub">The complete written brief that pairs with the wireframes. Every slide below matches a frame on the <a href="index.html">wireframe page</a>. Copy is final, pending review.</p>
+  <h1>UA attribution fraud<br>— visual &amp; copy, side by side</h1>
+  <p class="sub">Every slide below shows the visual device and its final copy together, with a plain-English note on what the slide says. Copy is final; all numbers are verified against the source deck (<em>case_study_ua_fraud_remediation</em>).</p>
+  <div class="verified">✓ Numbers verified against the source deck</div>
   <div class="meta">
     <span><b>Client</b> · Go Mobile Indonesia (own channel)</span>
-    <span><b>Format</b> · LinkedIn carousel · 9 slides · 1080 × 1350</span>
+    <span><b>Format</b> · 9 slides · 1080 × 1350</span>
     <span><b>Status</b> · copy final, pending review</span>
   </div>
 </div>
 
-<!-- 1. THE ANGLE -->
+<!-- 01 THE ANGLE -->
 <section>
   <div class="snum">01</div>
   <h2 class="sh">The angle</h2>
   <div class="angle">
     <span class="lbl">The angle</span>
     <p>Not the bot-farm story. <b>The traffic was real, the installs were real — only the credit was fake.</b> Someone was billing for users who were already installing.</p>
-    <p class="fine">This is the whole reason the post works. Most ad-fraud content shows warehouses of phones. This case explicitly <b style="color:#fff">ruled out</b> device farms and emulators, which makes the reveal genuinely counterintuitive for a marketing audience and makes each reader do arithmetic on their own budget.</p>
-    <p class="fine">Everything in the design serves that reveal. Slide 3 is the slide that carries it; if only one slide gets extra attention, it is that one.</p>
+    <p class="fine">Most ad-fraud content shows warehouses of phones. This case explicitly <b style="color:#fff">ruled out</b> device farms and emulators, which makes the reveal genuinely counterintuitive for a marketing audience and makes each reader do arithmetic on their own budget. Slide 3 carries it; if only one slide gets extra attention, it is that one.</p>
   </div>
   <p class="lead" style="margin-top:18px;"><b>Audience:</b> client-side UA and growth managers, brand and performance marketers, agency leads. Assume smart, sceptical, scrolling on a phone, allergic to agency self-congratulation.</p>
 </section>
 
-<!-- 2. SPECIFICATIONS -->
+<!-- 02 SPECS -->
 <section>
   <div class="snum">02</div>
   <h2 class="sh">Specifications</h2>
-  <div class="tscroll">
-  <table>
+  <div class="tscroll"><table>
     <tr><th>Item</th><th>Value</th></tr>
     <tr><td>Canvas</td><td>1080 × 1350 px (4:5)</td></tr>
     <tr><td>Slides</td><td>9</td></tr>
     <tr><td>Safe margin</td><td>80 px all sides</td></tr>
     <tr><td>Export</td><td>PNG, plus a single combined PDF for upload</td></tr>
     <tr><td>Extra export</td><td>Slide 1 at 1200 × 627 px for link-preview / repost use</td></tr>
-    <tr><td>Brand system</td><td>Existing Go Mobile carousel system — sparkle background texture, wordmark top-right, rounded card language, heavy geometric display face</td></tr>
+    <tr><td>Brand system</td><td>Existing Go Mobile carousel system — sparkle texture, wordmark top-right, rounded card language, heavy geometric display face</td></tr>
     <tr><td>Spelling</td><td>British English throughout (anonymised, cannibalised, relabelled). Match the source deck.</td></tr>
-  </table>
-  </div>
+  </table></div>
 </section>
 
-<!-- 3. COLOUR SYSTEM -->
+<!-- 03 COLOUR -->
 <section>
   <div class="snum">03</div>
   <h2 class="sh">Colour system — binding</h2>
@@ -199,177 +237,361 @@ code{background:var(--paper);border:1px solid var(--line);border-radius:6px;padd
     <li><b>Orange does not appear until slide 5.</b> Orange means <em>we act</em>, and slide 5 is where we act. Slides 1–4 are the problem; they stay grey, red and ink.</li>
     <li>A reader should be able to learn this language by slide 3 and then read slides 4–9 without the body copy.</li>
   </ul>
-  <p class="lead" style="margin-top:16px;font-size:15px;">The previous version of this carousel used five colours on one slide with no meaning attached to any of them. That is the main thing being corrected here.</p>
 </section>
 
-<!-- 4. COPY RULES -->
+<!-- 04 COPY RULES -->
 <section>
   <div class="snum">04</div>
   <h2 class="sh">Copy rules</h2>
   <ul class="rulelist">
-    <li><b>Maximum ~20 words per slide.</b> Word counts are given on each slide below. If a slide needs a paragraph, the device is wrong — flag it rather than shrinking type.</li>
+    <li><b>Maximum ~20 words per slide.</b> Word counts are on each slide below. If a slide needs a paragraph, the device is wrong — flag it rather than shrinking type.</li>
     <li>No caveats, disclaimers or methodology notes on any slide. All of it lives in the caption (section 06).</li>
     <li>Sentence case in headlines. Full stops stay — they set the flat, declarative tone the case needs.</li>
     <li>Numbers are labels, not headlines, except on slides 7 and 9.</li>
   </ul>
 </section>
 
-<!-- 5. SLIDE BY SLIDE -->
+<!-- ================= 05 SLIDE BY SLIDE ================= -->
 <section>
   <div class="snum">05</div>
-  <h2 class="sh">Slide by slide</h2>
+  <h2 class="sh">Slide by slide — visual &amp; copy</h2>
 
-  <!-- S1 -->
-  <div class="slide-c">
-    <div class="slide-head"><span class="slide-idx">Slide 1 · Hook</span><span class="eyebrow-tag none">no eyebrow</span></div>
-    <div class="slide-name">The dot grid</div>
-    <div class="block"><h5>Headline <span class="wc">10 words</span></h5>
-      <div class="copybox">1 in 5 paid installs wasn't caused by the ad.</div></div>
-    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>Footer: CASE STUDY / MOBILE USER ACQUISITION</span></div></div>
-    <div class="block"><h5>Device</h5><p>100 rounded squares in a 10 × 10 grid, 22 of them red, scattered rather than clustered. Grid centred, roughly 820 px wide, occupying the lower two-thirds.</p></div>
-    <div class="block"><h5>Notes</h5><ul>
-      <li>This is the feed thumbnail. It must work at 400 px wide with the headline unreadable — the red-among-grey pattern alone carries it.</li>
-      <li>No subline, no stat card, no 22.2% figure. The number is held back for slide 9.</li>
-      <li>Dots may become simple phone glyphs if preferred, but silhouettes must be identical so only colour differs.</li>
-    </ul></div>
+  <!-- SLIDE 1 -->
+  <div class="srow">
+    <div class="frame-col"><div class="frame"><div class="slide">
+      <div class="topbar"><span></span><span class="logo">go<span>mobile</span></span></div>
+      <h2 class="h">1 in 5 paid installs<br>wasn't caused<br>by the ad.</h2>
+      <div class="stage"><div class="dots" id="grid1"></div></div>
+      <div class="footline">Case study / mobile user acquisition</div>
+    </div><div class="cap">01 — Hook · dot grid, 22 of 100 red</div></div></div>
+    <div class="copy-col">
+      <div class="idx">Slide 01 · Hook</div>
+      <h3>The dot grid</h3>
+      <p class="desc">The whole problem in one image: of every 100 paid installs the client bought, 22 were credited to ads that did not cause them. It should read before a single word is.</p>
+      <div class="block"><h5>Headline <span class="wc">10 words</span></h5><div class="copybox">1 in 5 paid installs wasn't caused by the ad.</div></div>
+      <div class="block"><h5>Other copy</h5><div class="othercopy"><span>Footer: CASE STUDY / MOBILE USER ACQUISITION</span></div></div>
+      <div class="block"><h5>Device</h5><p>100 rounded squares in a 10 × 10 grid, <b>22 red</b> (= 22.2%), scattered not clustered. Grid centred, ~820 px wide, lower two-thirds.</p></div>
+      <div class="block"><h5>Notes</h5><ul>
+        <li>This is the feed thumbnail. It must work at 400 px wide with the headline unreadable — the red-among-grey pattern alone carries it.</li>
+        <li>No subline, no stat card, no 22.2% figure. The number is held back for slide 9.</li>
+        <li>Dots may become simple phone glyphs, but silhouettes must be identical so only colour differs.</li>
+      </ul></div>
+    </div>
   </div>
 
-  <!-- S2 -->
-  <div class="slide-c">
-    <div class="slide-head"><span class="slide-idx">Slide 2 · The trap</span><span class="eyebrow-tag">THE TRAP</span></div>
-    <div class="slide-name">One bar splitting into sixty</div>
-    <div class="block"><h5>Headline <span class="wc">4 words</span></h5>
-      <div class="copybox">The average looked fine.</div></div>
-    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>Bar label: NETWORK AVERAGE · CPI ON TARGET</span><span>Footer: 60+ placements behind one source name</span></div></div>
-    <div class="block"><h5>Device</h5><p>One calm grey bar across the top — the number the client was reading — fracturing downward into ~60 thin placement bars of uneven height, 10 of them red.</p></div>
-    <div class="block"><h5>Notes</h5><ul>
-      <li>Red bars noticeably taller than grey ones. Contamination was concentrated, not evenly spread.</li>
-      <li>The fan lines should read as a shatter, not an org chart.</li>
-      <li>This slide <b>is</b> the source-level-blending insight. It replaces two paragraphs of explanation in the original deck.</li>
-    </ul></div>
-  </div>
-
-  <!-- S3 -->
-  <div class="slide-c priority">
-    <div class="slide-head"><span class="slide-idx"><span class="star">★</span> Slide 3 · The mechanism</span><span class="eyebrow-tag">THE MECHANISM</span></div>
-    <div class="slide-name">The explainer — priority slide</div>
-    <div class="block"><h5>Headline <span class="wc">8 words</span></h5>
-      <div class="copybox">The traffic was real. The credit was fake.</div></div>
-    <div class="block"><h5>Other copy — labels only</h5><div class="othercopy"><span>Real user</span><span>Real install</span><span>claimed credit</span><span>Ad click — fabricated evidence</span></div></div>
-    <div class="block"><h5>Device</h5><p>User → install, both ticked green, joined by a solid green line. A dashed red arrow enters from below and attaches itself to the install, with a warning mark <b>on the connection</b>.</p></div>
-    <div class="block"><h5>Notes</h5><ul>
-      <li>The red mark sits on the <em>link</em>. Never on the user, never on the install. Putting it on either one inverts the entire argument.</li>
-      <li>Green elements solid and confident; the red click dashed and intrusive.</li>
-      <li>Test: a non-marketer should understand this in three seconds.</li>
-    </ul></div>
-  </div>
-
-  <!-- S4 -->
-  <div class="slide-c">
-    <div class="slide-head"><span class="slide-idx">Slide 4 · The speed</span><span class="eyebrow-tag">THE SPEED</span></div>
-    <div class="slide-name">The rotation loop</div>
-    <div class="block"><h5>Headline <span class="wc">11 words</span></h5>
-      <div class="copybox">Block it, and it returns tomorrow under a new name.</div></div>
-    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>Wave 1 · D1 16% · D2 42%</span><span>Wave 2 · D1 19% · D2 41%</span><span>Placement A</span><span>BLOCKED</span><span>24h</span><span>Placement B</span></div></div>
-    <div class="block"><h5>Device</h5><p>Two Day 1 → Day 2 bar pairs on top (grey → red, roughly doubling). Below: Placement A → BLOCKED → 24h → Placement B, with a dashed arrow looping back to the start so the cycle is visibly closed.</p></div>
-    <div class="block"><h5>Notes</h5><ul>
-      <li>The loop arrow is the point. It should read as futility, not as a workflow.</li>
-      <li>Both waves identical in construction so the repetition is obvious.</li>
-    </ul></div>
-  </div>
-
-  <!-- S5 -->
-  <div class="slide-c">
-    <div class="slide-head"><span class="slide-idx">Slide 5 · What we did</span><span class="eyebrow-tag">WHAT WE DID</span></div>
-    <div class="slide-name">The gate</div>
-    <div class="block"><h5>Headline <span class="wc">10 words</span></h5>
-      <div class="copybox">We stopped blocking what fails. We buy only what passes.</div></div>
-    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>DAILY CHECK</span><span>Proven placements · FULL BUDGET</span><span>Unproven supply · CAPPED</span><span>Footer: Nothing enters the main buy until it has proven itself</span></div></div>
-    <div class="block"><h5>Device</h5><p>Mixed supply enters from the left → passes through an orange <b>Daily check</b> gate → exits into two lanes: a wide green PROVEN / FULL BUDGET lane and a narrow grey UNPROVEN / CAPPED lane.</p></div>
-    <div class="block"><h5>Notes</h5><ul>
-      <li>Lane <em>width</em> carries the budget split. The green lane is visibly wider — do not equalise them for tidiness.</li>
-      <li>First appearance of orange in the set.</li>
-      <li>No thresholds, no test logic, no rule names. Method stays proprietary.</li>
-    </ul></div>
-  </div>
-
-  <!-- S6 -->
-  <div class="slide-c">
-    <div class="slide-head"><span class="slide-idx">Slide 6 · The result</span><span class="eyebrow-tag">THE RESULT</span></div>
-    <div class="slide-name">The actual chart</div>
-    <div class="block"><h5>Headline <span class="wc">6 words</span></h5>
-      <div class="copybox">Then it held. 14 clean days.</div></div>
-    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>RESTRUCTURE (marker)</span><span>two waves</span><span>14 consecutive clean days</span><span>Footer: Daily fraud rate · 21 delivery days</span></div></div>
-    <div class="block"><h5>Device</h5><p>The real daily fraud-rate line, occupying ~70% of the slide. Red line before the orange RESTRUCTURE marker, green after, flat along the floor.</p></div>
-    <div class="block"><h5>Notes</h5><ul>
-      <li><b>Use the real daily values from the source deck.</b> The wireframe line is a shape sketch only — two spikes, marker, flat. Ask for the export if it isn't in the working files.</li>
-      <li>The line changing colour at the marker does the storytelling. No stat cards around it.</li>
-      <li>Do not smooth the spikes into a gentle curve. The jaggedness is the evidence.</li>
-    </ul></div>
-  </div>
-
-  <!-- S7 -->
-  <div class="slide-c">
-    <div class="slide-head"><span class="slide-idx">Slide 7 · The twist</span><span class="eyebrow-tag">THE TWIST</span></div>
-    <div class="slide-name">Volume went up</div>
-    <div class="block"><h5>Headline <span class="wc">9 words</span></h5>
-      <div class="copybox">Removing the fraud didn't cost volume. It added volume.</div></div>
-    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>525 BEFORE → 588 AFTER</span><span>genuine installs per day</span><span>−31% COST PER INSTALL</span><span>−47% COST PER ACTION</span></div></div>
-    <div class="block"><h5>Device</h5><p>525 → 588 set enormous and centred, "after" noticeably larger and green. The two percentage figures demoted to small outlined cards underneath.</p></div>
-    <div class="block"><h5>Notes</h5><ul>
-      <li>This slide exists to kill the obvious objection — <em>you just cut spend</em>. The size difference between 525 and 588 does that job. Do not set them at equal weight.</li>
-      <li>Percentage cards stay outlined and quiet. Support, not headline.</li>
-      <li>Use the proper minus sign (−), not a hyphen.</li>
-    </ul></div>
-  </div>
-
-  <!-- S8 -->
-  <div class="slide-c">
-    <div class="slide-head"><span class="slide-idx">Slide 8 · The restraint</span><span class="eyebrow-tag">THE RESTRAINT</span></div>
-    <div class="slide-name">The audit checklist</div>
-    <div class="block"><h5>Headline <span class="wc">7 words</span></h5>
-      <div class="copybox">We named only what the evidence carried.</div></div>
-    <div class="block"><h5>Other copy — four rows</h5>
-      <div class="tscroll">
-      <table class="chiprow">
-        <tr><th>Row</th><th>Status chip</th><th>Chip colour</th></tr>
-        <tr><td>Manufactured attribution</td><td><span class="status" style="background:var(--red)">CONFIRMED</span></td><td>Red</td></tr>
-        <tr><td>Device farms &amp; emulators</td><td><span class="status" style="background:var(--grey-d)">RULED OUT</span></td><td>Grey</td></tr>
-        <tr><td>Organic cannibalisation</td><td><span class="status" style="background:var(--grey-d)">RULED OUT</span></td><td>Grey</td></tr>
-        <tr><td>Inventory type</td><td><span class="status" style="background:var(--orange)">OPEN QUESTION</span></td><td>Orange</td></tr>
-      </table>
+  <!-- SLIDE 2 -->
+  <div class="srow">
+    <div class="frame-col"><div class="frame"><div class="slide">
+      <div class="topbar"><span class="eyebrow">The trap</span><span class="logo">go<span>mobile</span></span></div>
+      <h2 class="h sm">The average<br>looked fine.</h2>
+      <div class="stage">
+        <div class="avgbar">NETWORK AVERAGE · CPI ON TARGET</div>
+        <svg class="fan" viewBox="0 0 920 110" preserveAspectRatio="none" style="width:100%;height:110px;">
+          <g stroke="#C7C1BC" stroke-width="2">
+            <line x1="460" y1="0" x2="40" y2="110"/><line x1="460" y1="0" x2="180" y2="110"/>
+            <line x1="460" y1="0" x2="320" y2="110"/><line x1="460" y1="0" x2="460" y2="110"/>
+            <line x1="460" y1="0" x2="600" y2="110"/><line x1="460" y1="0" x2="740" y2="110"/>
+            <line x1="460" y1="0" x2="880" y2="110"/>
+          </g>
+        </svg>
+        <div class="bars" id="bars2"></div>
+        <div class="footline" style="margin-top:26px;">60+ placements behind one source name</div>
+      </div>
+    </div><div class="cap">02 — One bar splitting into sixty</div></div></div>
+    <div class="copy-col">
+      <div class="idx">Slide 02 · The trap</div>
+      <h3>One bar splitting into sixty</h3>
+      <p class="desc">Standard reporting showed one healthy source-level average. Underneath it sat 60+ publishers — the blend hid ten contaminated placements inside an acceptable-looking number.</p>
+      <div class="block"><h5>Headline <span class="wc">4 words</span></h5><div class="copybox">The average looked fine.</div></div>
+      <div class="block"><h5>Other copy</h5><div class="othercopy"><span>Bar label: NETWORK AVERAGE · CPI ON TARGET</span><span>Footer: 60+ placements behind one source name</span></div></div>
+      <div class="block"><h5>Device</h5><p>One calm grey bar across the top — the number the client read — fracturing into ~60 thin placement bars of uneven height, <b>10 of them red</b>.</p></div>
+      <div class="block"><h5>From the deck</h5><div class="deckstats">
+        <span class="s"><b>13,000+</b><span>Installs audited</span></span>
+        <span class="s"><b>21</b><span>Delivery days</span></span>
+        <span class="s"><b>60+</b><span>Placements</span></span>
+        <span class="s"><b>10</b><span>Contaminated</span></span>
+        <span class="s"><b>4</b><span>Cleared</span></span>
       </div></div>
-    <div class="block"><h5>Device</h5><p>Four-row checklist, monospace status chips right-aligned.</p></div>
-    <div class="block"><h5>Notes</h5><ul>
-      <li>Publishing an open question is what makes the rest believable. Keep that chip fully visible — do not soften it or drop it to fit.</li>
-      <li>Supporting detail (the 1.7% organic band, signature matching) goes in the caption.</li>
-    </ul></div>
+      <div class="block"><h5>Notes</h5><ul>
+        <li>Red bars noticeably taller than grey ones. Contamination was concentrated, not evenly spread.</li>
+        <li>The fan lines should read as a shatter, not an org chart.</li>
+      </ul></div>
+    </div>
   </div>
 
-  <!-- S9 -->
-  <div class="slide-c">
-    <div class="slide-head"><span class="slide-idx">Slide 9 · Close</span><span class="eyebrow-tag none">no eyebrow</span></div>
-    <div class="slide-name">The bookend</div>
-    <div class="block"><h5>Headline <span class="wc">6 words</span></h5>
-      <div class="copybox">22.2% → 0.96% in three weeks.</div></div>
-    <div class="block"><h5>Other copy</h5><div class="othercopy"><span>Footer: Same audit runs on any account with raw attribution data.</span><span>CTA pill: Talk to us</span></div></div>
-    <div class="block"><h5>Device</h5><p>The identical 100-dot grid from slide 1 — same position, same size — now with a single red dot.</p></div>
-    <div class="block"><h5>Notes</h5><ul>
-      <li><b>Protect this slide.</b> It is the cheapest element in the set to build and the only one that closes the story visually.</li>
-      <li>Grid position and dot size must match slide 1 <em>exactly</em>, so a viewer swiping back feels the difference.</li>
-      <li>Place the surviving red dot somewhere no red dot appeared on slide 1 — one survivor, not a leftover.</li>
-    </ul></div>
+  <!-- SLIDE 3 -->
+  <div class="srow">
+    <div class="frame-col"><div class="frame"><div class="slide">
+      <div class="topbar"><span class="eyebrow">The mechanism</span><span class="logo">go<span>mobile</span></span></div>
+      <h2 class="h sm">The traffic was real.<br>The credit was fake.</h2>
+      <div class="stage">
+        <div style="display:flex;align-items:center;gap:30px;">
+          <div class="node"><span class="tick">✓</span> Real user</div>
+          <div style="flex:1;height:8px;background:var(--green);border-radius:4px;"></div>
+          <div class="node"><span class="tick">✓</span> Real install</div>
+        </div>
+        <svg viewBox="0 0 920 230" style="width:100%;height:230px;margin-top:10px;">
+          <path d="M170 210 C 170 120, 700 150, 720 40" fill="none" stroke="#D93B21" stroke-width="7" stroke-dasharray="16 12"/>
+          <circle cx="720" cy="34" r="26" fill="#D93B21"/>
+          <text x="720" y="46" text-anchor="middle" fill="#fff" font-size="34" font-weight="800" font-family="Figtree">!</text>
+          <text x="410" y="150" fill="#D93B21" font-size="30" font-weight="800" font-family="Figtree">claimed credit</text>
+        </svg>
+        <div class="badnode">Ad click · fabricated evidence</div>
+      </div>
+    </div><div class="cap">03 — Fake-attribution explainer</div></div></div>
+    <div class="copy-col">
+      <div class="idx"><span class="star">★</span> Slide 03 · The mechanism — priority slide</div>
+      <h3>The explainer</h3>
+      <p class="desc">The counterintuitive core of the whole case: the users and installs were genuine. Only the click evidence claiming credit for them was fabricated. A non-marketer should get this in three seconds.</p>
+      <div class="block"><h5>Headline <span class="wc">8 words</span></h5><div class="copybox">The traffic was real. The credit was fake.</div></div>
+      <div class="block"><h5>Other copy — labels only</h5><div class="othercopy"><span>Real user</span><span>Real install</span><span>claimed credit</span><span>Ad click — fabricated evidence</span></div></div>
+      <div class="block"><h5>Device</h5><p>User → install, both ticked green, joined by a solid green line. A dashed red arrow enters from below and attaches to the install, with a warning mark <b>on the connection</b>.</p></div>
+      <div class="block"><h5>Notes</h5><ul>
+        <li>The red mark sits on the <em>link</em>. Never on the user, never on the install — putting it on either inverts the entire argument.</li>
+        <li>Green elements solid and confident; the red click dashed and intrusive.</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 4 -->
+  <div class="srow">
+    <div class="frame-col"><div class="frame"><div class="slide">
+      <div class="topbar"><span class="eyebrow">The speed</span><span class="logo">go<span>mobile</span></span></div>
+      <h2 class="h sm">Block it, and it<br>returns tomorrow<br>under a new name.</h2>
+      <div class="stage">
+        <div style="display:flex;gap:70px;">
+          <div style="flex:1;">
+            <div style="display:flex;align-items:flex-end;gap:22px;height:190px;">
+              <div style="flex:1;text-align:center;"><div style="height:60px;background:var(--grey);border-radius:8px;"></div><div class="mono" style="font-size:24px;margin-top:12px;color:var(--grey-d);">D1 16%</div></div>
+              <div style="flex:1;text-align:center;"><div style="height:158px;background:var(--red);border-radius:8px;"></div><div class="mono" style="font-size:24px;margin-top:12px;color:var(--red);font-weight:700;">D2 42%</div></div>
+            </div>
+            <div class="footline" style="margin-top:14px;">Wave 1</div>
+          </div>
+          <div style="flex:1;">
+            <div style="display:flex;align-items:flex-end;gap:22px;height:190px;">
+              <div style="flex:1;text-align:center;"><div style="height:72px;background:var(--grey);border-radius:8px;"></div><div class="mono" style="font-size:24px;margin-top:12px;color:var(--grey-d);">D1 19%</div></div>
+              <div style="flex:1;text-align:center;"><div style="height:154px;background:var(--red);border-radius:8px;"></div><div class="mono" style="font-size:24px;margin-top:12px;color:var(--red);font-weight:700;">D2 41%</div></div>
+            </div>
+            <div class="footline" style="margin-top:14px;">Wave 2</div>
+          </div>
+        </div>
+        <svg viewBox="0 0 920 210" style="width:100%;height:210px;margin-top:44px;">
+          <rect x="0" y="60" width="230" height="80" rx="16" fill="#D93B21"/>
+          <text x="115" y="110" text-anchor="middle" fill="#fff" font-size="30" font-weight="800" font-family="Figtree">Placement A</text>
+          <rect x="270" y="60" width="180" height="80" rx="16" fill="#14100E"/>
+          <text x="360" y="110" text-anchor="middle" fill="#fff" font-size="28" font-weight="800" font-family="JetBrains Mono">BLOCKED</text>
+          <text x="530" y="110" text-anchor="middle" fill="#7A736E" font-size="30" font-weight="800" font-family="JetBrains Mono">24h</text>
+          <rect x="620" y="60" width="230" height="80" rx="16" fill="#D93B21"/>
+          <text x="735" y="110" text-anchor="middle" fill="#fff" font-size="30" font-weight="800" font-family="Figtree">Placement B</text>
+          <path d="M850 100 C 900 100, 900 190, 430 190 C 60 190, 40 150, 20 130" fill="none" stroke="#D93B21" stroke-width="6" stroke-dasharray="14 10"/>
+          <path d="M20 130 l 22 -6 l -6 22 z" fill="#D93B21"/>
+        </svg>
+      </div>
+    </div><div class="cap">04 — Day 1→2 spikes + rotation loop</div></div></div>
+    <div class="copy-col">
+      <div class="idx">Slide 04 · The speed</div>
+      <h3>The rotation loop</h3>
+      <p class="desc">Both fraud waves opened quietly and roughly doubled on day two — one placement went from two dozen installs to several hundred inside 24h. Blocked supply came back relabelled within a day. That is why weekly review never caught it.</p>
+      <div class="block"><h5>Headline <span class="wc">11 words</span></h5><div class="copybox">Block it, and it returns tomorrow under a new name.</div></div>
+      <div class="block"><h5>Other copy — numbers as labels</h5><div class="othercopy"><span>Wave 1 · D1 16% · D2 42%</span><span>Wave 2 · D1 19% · D2 41%</span><span>Placement A</span><span>BLOCKED</span><span>24h</span><span>Placement B</span></div></div>
+      <div class="block"><h5>Device</h5><p>Two Day 1 → Day 2 bar pairs (grey → red, ~doubling). Below: Placement A → BLOCKED → 24h → Placement B, dashed arrow looping back so the cycle is visibly closed.</p></div>
+      <div class="block"><h5>Notes</h5><ul>
+        <li>The loop arrow is the point. It should read as futility, not a workflow.</li>
+        <li>Both waves identical in construction so the repetition is obvious.</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5 -->
+  <div class="srow">
+    <div class="frame-col"><div class="frame"><div class="slide">
+      <div class="topbar"><span class="eyebrow">What we did</span><span class="logo">go<span>mobile</span></span></div>
+      <h2 class="h sm">We stopped blocking<br>what fails. We buy<br>only what passes.</h2>
+      <div class="stage">
+        <div style="display:flex;align-items:center;gap:26px;">
+          <div style="display:grid;grid-template-columns:repeat(3,42px);gap:14px;">
+            <span class="dot" style="width:42px;height:42px;border-radius:12px;"></span><span class="dot" style="width:42px;height:42px;border-radius:12px;"></span><span class="dot" style="width:42px;height:42px;border-radius:12px;"></span>
+            <span class="dot" style="width:42px;height:42px;border-radius:12px;"></span><span class="dot bad" style="width:42px;height:42px;border-radius:12px;"></span><span class="dot" style="width:42px;height:42px;border-radius:12px;"></span>
+            <span class="dot" style="width:42px;height:42px;border-radius:12px;"></span><span class="dot" style="width:42px;height:42px;border-radius:12px;"></span><span class="dot bad" style="width:42px;height:42px;border-radius:12px;"></span>
+          </div>
+          <div style="flex:1;height:6px;background:var(--grey);"></div>
+          <div style="background:var(--orange);color:#fff;border-radius:18px;padding:32px 26px;text-align:center;font-weight:900;font-size:30px;line-height:1.15;">DAILY<br>CHECK</div>
+          <div style="flex:1;height:6px;background:var(--grey);"></div>
+        </div>
+        <div style="margin-top:50px;display:flex;flex-direction:column;gap:22px;">
+          <div class="lane" style="background:var(--green);"><span>Proven placements</span><span class="chip" style="background:rgba(0,0,0,.22)">FULL BUDGET</span></div>
+          <div class="lane" style="background:var(--grey);width:62%;"><span>Unproven supply</span><span class="chip" style="background:rgba(0,0,0,.22)">CAPPED</span></div>
+        </div>
+        <div class="footline" style="margin-top:34px;">Nothing enters the main buy until it has proven itself</div>
+      </div>
+    </div><div class="cap">05 — The gate / filter</div></div></div>
+    <div class="copy-col">
+      <div class="idx">Slide 05 · What we did</div>
+      <h3>The gate</h3>
+      <p class="desc">We stopped reacting to bad supply and built a proven-only buy: a separate campaign of placements that cleared every test across multiple days at real volume, with daily checks and new supply capped until it earns in. No network change, no renegotiation, no pause.</p>
+      <div class="block"><h5>Headline <span class="wc">10 words</span></h5><div class="copybox">We stopped blocking what fails. We buy only what passes.</div></div>
+      <div class="block"><h5>Other copy</h5><div class="othercopy"><span>DAILY CHECK</span><span>Proven placements · FULL BUDGET</span><span>Unproven supply · CAPPED</span><span>Footer: Nothing enters the main buy until it has proven itself</span></div></div>
+      <div class="block"><h5>Device</h5><p>Mixed supply enters left → passes an orange <b>Daily check</b> gate → exits into a wide green PROVEN / FULL BUDGET lane and a narrow grey UNPROVEN / CAPPED lane.</p></div>
+      <div class="block"><h5>Notes</h5><ul>
+        <li>Lane <em>width</em> carries the budget split. The green lane is visibly wider — do not equalise them for tidiness.</li>
+        <li>First appearance of orange in the set. No thresholds or rule names — method stays proprietary.</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 6 -->
+  <div class="srow">
+    <div class="frame-col"><div class="frame"><div class="slide">
+      <div class="topbar"><span class="eyebrow">The result</span><span class="logo">go<span>mobile</span></span></div>
+      <h2 class="h sm">Then it held.<br>14 clean days.</h2>
+      <div class="stage">
+        <svg viewBox="0 0 920 480" style="width:100%;height:480px;">
+          <g stroke="#DED7D1" stroke-width="2">
+            <line x1="40" y1="60" x2="900" y2="60"/><line x1="40" y1="180" x2="900" y2="180"/>
+            <line x1="40" y1="300" x2="900" y2="300"/><line x1="40" y1="420" x2="900" y2="420"/>
+          </g>
+          <text x="0" y="66" fill="#8E8783" font-size="20" font-family="JetBrains Mono">45</text>
+          <text x="0" y="186" fill="#8E8783" font-size="20" font-family="JetBrains Mono">30</text>
+          <text x="0" y="306" fill="#8E8783" font-size="20" font-family="JetBrains Mono">15</text>
+          <text x="0" y="414" fill="#8E8783" font-size="20" font-family="JetBrains Mono">0</text>
+          <rect x="286" y="60" width="614" height="360" fill="#2FA24A" opacity="0.08"/>
+          <polyline points="40,292 84.7,84 129.5,268 174.2,92 218.9,383.2 263.7,336.8" fill="none" stroke="#D93B21" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+          <polyline points="263.7,336.8 286,378 308.4,413.6" fill="none" stroke="#D93B21" stroke-width="4" stroke-dasharray="6 6" opacity="0.5"/>
+          <polyline points="308.4,413.6 353.2,412.8 397.9,412 442.6,408.8 487.4,406.4 532.1,408 576.8,415.2 621.6,414.4 666.3,408 711.1,413.6 755.8,416 800.5,415.2 845.3,414.4 890,415.2" fill="none" stroke="#2FA24A" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle cx="84.7" cy="84" r="7" fill="#D93B21"/><circle cx="174.2" cy="92" r="7" fill="#D93B21"/>
+          <line x1="286" y1="30" x2="286" y2="440" stroke="#F58220" stroke-width="6" stroke-dasharray="14 10"/>
+          <rect x="196" y="0" width="180" height="44" rx="10" fill="#F58220"/>
+          <text x="286" y="32" text-anchor="middle" fill="#fff" font-size="24" font-weight="800" font-family="JetBrains Mono">RESTRUCTURE</text>
+          <text x="84.7" y="70" text-anchor="middle" fill="#D93B21" font-size="26" font-weight="800" font-family="JetBrains Mono">42%</text>
+          <text x="174.2" y="78" text-anchor="middle" fill="#D93B21" font-size="26" font-weight="800" font-family="JetBrains Mono">41%</text>
+          <text x="600" y="392" text-anchor="middle" fill="#2FA24A" font-size="24" font-weight="800" font-family="JetBrains Mono">0.96% avg</text>
+          <text x="150" y="462" fill="#D93B21" font-size="26" font-weight="800" font-family="Figtree">two waves</text>
+          <text x="600" y="462" fill="#2FA24A" font-size="26" font-weight="800" font-family="Figtree">14 consecutive clean days</text>
+        </svg>
+      </div>
+      <div class="footline">Daily fraud rate · 21 delivery days</div>
+    </div><div class="cap">06 — Real chart · deck values</div></div></div>
+    <div class="copy-col">
+      <div class="idx">Slide 06 · The result</div>
+      <h3>The actual chart</h3>
+      <p class="desc">Daily fraud rate across the engagement: two waves peaking at 42% and 41%, then 14 consecutive clean days after the restructure, averaging 0.96%. The line changing colour at the marker does the storytelling.</p>
+      <div class="block"><h5>Headline <span class="wc">6 words</span></h5><div class="copybox">Then it held. 14 clean days.</div></div>
+      <div class="block"><h5>Other copy</h5><div class="othercopy"><span>RESTRUCTURE (marker)</span><span>two waves</span><span>14 consecutive clean days</span><span>Footer: Daily fraud rate · 21 delivery days</span></div></div>
+      <div class="block"><h5>Exact daily values (deck)</h5><p class="mono" style="font-size:13px;line-height:1.7;color:#241f1c;"><b>Pre-restructure (red):</b> 16, 42, 19, 41, 4.6, 10.4<br><b>Restructure marker</b> between day 6 and day 7<br><b>Post (green, 14 days):</b> 0.8, 0.9, 1.0, 1.4, 1.7, 1.5, 0.6, 0.7, 1.5, 0.8, 0.5, 0.6, 0.7, 0.6 &nbsp;→ avg 0.96%</p></div>
+      <div class="block"><h5>Notes</h5><ul>
+        <li>Values baked into the wireframe now match the deck exactly — plot these, don't re-sketch.</li>
+        <li>Don't smooth the spikes into a gentle curve. The jaggedness is the evidence.</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 7 -->
+  <div class="srow">
+    <div class="frame-col"><div class="frame"><div class="slide">
+      <div class="topbar"><span class="eyebrow">The twist</span><span class="logo">go<span>mobile</span></span></div>
+      <h2 class="h sm">Removing the fraud<br>didn't cost volume.<br>It added volume.</h2>
+      <div class="stage">
+        <div style="display:flex;align-items:center;justify-content:center;gap:44px;">
+          <div style="text-align:center;"><div style="font-size:130px;font-weight:900;color:var(--grey-d);line-height:1;">525</div><div class="mono" style="font-size:22px;color:var(--grey-d);margin-top:10px;letter-spacing:.1em;">BEFORE</div></div>
+          <div style="font-size:96px;color:var(--green);font-weight:900;">→</div>
+          <div style="text-align:center;"><div style="font-size:170px;font-weight:900;color:var(--green);line-height:1;">588</div><div class="mono" style="font-size:22px;color:var(--green);margin-top:10px;letter-spacing:.1em;">AFTER</div></div>
+        </div>
+        <div style="text-align:center;font-size:30px;font-weight:700;color:var(--mute);margin-top:18px;">genuine installs per day</div>
+        <div style="display:flex;gap:20px;margin-top:56px;">
+          <div style="flex:1;border:4px solid var(--line);border-radius:16px;padding:26px;text-align:center;"><div style="font-size:56px;font-weight:900;">−31%</div><div class="mono" style="font-size:20px;color:var(--mute);margin-top:8px;">COST PER INSTALL</div></div>
+          <div style="flex:1;border:4px solid var(--line);border-radius:16px;padding:26px;text-align:center;"><div style="font-size:56px;font-weight:900;">−47%</div><div class="mono" style="font-size:20px;color:var(--mute);margin-top:8px;">COST PER ACTION</div></div>
+        </div>
+      </div>
+    </div><div class="cap">07 — 525 → 588 as the hero</div></div></div>
+    <div class="copy-col">
+      <div class="idx">Slide 07 · The twist</div>
+      <h3>Volume went up</h3>
+      <p class="desc">This slide kills the obvious objection — <em>you just cut spend</em>. Total delivery came down slightly, but genuine installs per day rose 525 → 588 (+12%), because the removed volume was never real. The client bought more usable installs, at lower unit cost, from the same partner.</p>
+      <div class="block"><h5>Headline <span class="wc">9 words</span></h5><div class="copybox">Removing the fraud didn't cost volume. It added volume.</div></div>
+      <div class="block"><h5>Other copy (on slide)</h5><div class="othercopy"><span>525 BEFORE → 588 AFTER</span><span>genuine installs per day</span><span>−31% COST PER INSTALL</span><span>−47% COST PER ACTION</span></div></div>
+      <div class="block"><h5>Full before / after (deck) — reference, not all on-slide</h5>
+        <div class="deckbox"><table>
+          <tr><th>Measure</th><th>Before</th><th>After</th></tr>
+          <tr><td>Fraud rate</td><td class="num">22.2%</td><td class="num">0.96%</td></tr>
+          <tr><td>Clean installs / day</td><td class="num">525</td><td class="num">588</td></tr>
+          <tr><td>Reached target in-app action</td><td class="num">56%</td><td class="num">73%</td></tr>
+          <tr><td>Same, vs organic benchmark</td><td class="num">68%</td><td class="num">89%</td></tr>
+        </table></div>
+        <p style="margin-top:8px;">Headline deltas: fraud <b>−96%</b> · CPI <b>−31%</b> · cost per target action <b>−47%</b>.</p>
+      </div>
+      <div class="block"><h5>Notes</h5><ul>
+        <li>The size difference between 525 and 588 does the work. Do not set them at equal weight.</li>
+        <li>Percentage cards stay outlined and quiet. Support, not headline. Use the proper minus sign (−), not a hyphen.</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 8 -->
+  <div class="srow">
+    <div class="frame-col"><div class="frame"><div class="slide">
+      <div class="topbar"><span class="eyebrow">The restraint</span><span class="logo">go<span>mobile</span></span></div>
+      <h2 class="h sm">We named only what<br>the evidence carried.</h2>
+      <div class="stage">
+        <div class="crow"><span class="t">Manufactured attribution</span><span class="status" style="background:var(--red);">CONFIRMED</span></div>
+        <div class="crow"><span class="t">Device farms &amp; emulators</span><span class="status" style="background:var(--grey-d);">RULED OUT</span></div>
+        <div class="crow"><span class="t">Organic cannibalisation</span><span class="status" style="background:var(--grey-d);">RULED OUT</span></div>
+        <div class="crow" style="border-bottom:none;"><span class="t">Inventory type</span><span class="status" style="background:var(--orange);">OPEN QUESTION</span></div>
+      </div>
+    </div><div class="cap">08 — Status checklist</div></div></div>
+    <div class="copy-col">
+      <div class="idx">Slide 08 · The restraint</div>
+      <h3>The audit checklist</h3>
+      <p class="desc">We named only the mechanism the evidence supported and published what we ruled out. Organic held inside a 1.7% band, device signatures matched real users — and inventory type stays an open question, not a claim.</p>
+      <div class="block"><h5>Headline <span class="wc">7 words</span></h5><div class="copybox">We named only what the evidence carried.</div></div>
+      <div class="block"><h5>Other copy — four rows</h5>
+        <div class="tscroll"><table>
+          <tr><th>Row</th><th>Status chip</th><th>Colour</th></tr>
+          <tr><td>Manufactured attribution</td><td><span class="status" style="background:var(--red)">CONFIRMED</span></td><td>Red</td></tr>
+          <tr><td>Device farms &amp; emulators</td><td><span class="status" style="background:var(--grey-d)">RULED OUT</span></td><td>Grey</td></tr>
+          <tr><td>Organic cannibalisation</td><td><span class="status" style="background:var(--grey-d)">RULED OUT</span></td><td>Grey</td></tr>
+          <tr><td>Inventory type</td><td><span class="status" style="background:var(--orange)">OPEN QUESTION</span></td><td>Orange</td></tr>
+        </table></div></div>
+      <div class="block"><h5>Notes</h5><ul>
+        <li>Publishing an open question is what makes the rest believable. Keep that chip fully visible.</li>
+        <li>Supporting detail (the 1.7% organic band, signature matching) goes in the caption.</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 9 -->
+  <div class="srow">
+    <div class="frame-col"><div class="frame"><div class="slide">
+      <div class="topbar"><span></span><span class="logo">go<span>mobile</span></span></div>
+      <h2 class="h">22.2% → 0.96%<br>in three weeks.</h2>
+      <div class="stage"><div class="dots" id="grid9"></div></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;">
+        <div class="footline">Same audit runs on any account<br>with raw attribution data.</div>
+        <div style="background:var(--ink);color:#fff;border-radius:100px;padding:20px 34px;font-size:26px;font-weight:800;">Talk to us</div>
+      </div>
+    </div><div class="cap">09 — Bookend: same grid, one red dot</div></div></div>
+    <div class="copy-col">
+      <div class="idx">Slide 09 · Close</div>
+      <h3>The bookend</h3>
+      <p class="desc">Same grid as slide 1, one dot left: 22.2% → 0.96% in three weeks, on the same network and the same contract. The swipe-back moment is the payoff.</p>
+      <div class="block"><h5>Headline <span class="wc">6 words</span></h5><div class="copybox">22.2% → 0.96% in three weeks.</div></div>
+      <div class="block"><h5>Other copy</h5><div class="othercopy"><span>Footer: Same audit runs on any account with raw attribution data.</span><span>CTA pill: Talk to us</span></div></div>
+      <div class="block"><h5>Device</h5><p>The identical 100-dot grid from slide 1 — same position, same size — now with a <b>single red dot</b>.</p></div>
+      <div class="block"><h5>Notes</h5><ul>
+        <li><b>Protect this slide.</b> Grid position and dot size must match slide 1 exactly, so a viewer swiping back feels the difference.</li>
+        <li>Place the surviving red dot where no red dot appeared on slide 1 — one survivor, not a leftover.</li>
+      </ul></div>
+    </div>
   </div>
 </section>
 
-<!-- 6. POST CAPTION -->
+<!-- 06 POST CAPTION -->
 <section>
   <div class="snum">06</div>
   <h2 class="sh">Post caption</h2>
   <p class="lead">The first two lines are what show before “…see more” on mobile. They carry the whole hook.</p>
   <div class="caption">
-    <p class="hook fold">No bots. No device farms.</p>
-    <p class="fold">The users were real. The installs were real. 22.2% of them just weren't caused by the ad the client was paying for.</p>
+    <p class="hook">No bots. No device farms.</p>
+    <p>The users were real. The installs were real. 22.2% of them just weren't caused by the ad the client was paying for.</p>
     <p class="foldnote">↑ everything above the dashed line shows before “…see more”</p>
     <p>We audited 13,000+ installs across 21 delivery days on one paid channel. Volume was on plan. Cost per install sat inside target. Nothing in standard reporting flagged a problem — because the network aggregates hundreds of publishers behind a single source name, and the average blended contaminated supply with clean supply into one acceptable-looking number.</p>
     <p>Underneath that average, 10 placements out of 60+ were manufacturing click evidence to claim credit for installs that were happening anyway.</p>
@@ -395,7 +617,7 @@ code{background:var(--paper);border:1px solid var(--line);border-radius:6px;padd
   </ol>
 </section>
 
-<!-- 7. ALT TEXT -->
+<!-- 07 ALT TEXT -->
 <section>
   <div class="snum">07</div>
   <h2 class="sh">Alt text</h2>
@@ -406,14 +628,14 @@ code{background:var(--paper);border:1px solid var(--line);border-radius:6px;padd
     <li>Diagram: a real user and a real install linked in green, with a fabricated ad click attaching itself to the install, flagged red.</li>
     <li>Two charts showing fraud rates roughly doubling from day one to day two, and a blocked placement returning under a new name after 24 hours.</li>
     <li>Diagram: placements passing through a daily check, splitting into a wide proven lane at full budget and a narrow unproven lane, capped.</li>
-    <li>Line chart of daily fraud rate: two spikes, a restructure marker, then 14 flat days below one percent.</li>
-    <li>Genuine installs per day rising from 525 to 588, with cost per install down 31% and cost per action down 47%.</li>
+    <li>Line chart of daily fraud rate: two spikes to about 42 percent, a restructure marker, then 14 flat days below one percent.</li>
+    <li>Genuine installs per day rising from 525 to 588, with cost per install down 31 percent and cost per action down 47 percent.</li>
     <li>Audit checklist: manufactured attribution confirmed, device farms ruled out, organic cannibalisation ruled out, inventory type an open question.</li>
-    <li>The same grid of 100 squares, now with a single red square, above the figure 22.2% to 0.96%.</li>
+    <li>The same grid of 100 squares, now with a single red square, above the figure 22.2 percent to 0.96 percent.</li>
   </ol>
 </section>
 
-<!-- 8. DELIVERABLES -->
+<!-- 08 DELIVERABLES -->
 <section>
   <div class="snum">08</div>
   <h2 class="sh">Deliverables</h2>
@@ -424,11 +646,42 @@ code{background:var(--paper);border:1px solid var(--line);border-radius:6px;padd
     <li><span class="box"></span> Editable source file in the shared drive</li>
     <li><span class="box"></span> Alt text pasted into the design ticket</li>
   </ul>
-  <div class="dep"><b>Open dependency:</b> real daily fraud-rate values for slide 6, from the source deck's chart data.</div>
+  <div class="dep">✓ <b>Slide 6 dependency resolved</b> — real daily fraud-rate values are now in the wireframe and listed on slide 6 above, taken from the source deck.</div>
 </section>
 
-<div class="foot">Go Mobile Indonesia · UA attribution fraud carousel · full copy &amp; designer brief · pairs with <a href="index.html" style="color:var(--orange)">the wireframes</a></div>
+<div class="foot">Go Mobile Indonesia · UA attribution fraud carousel · full copy &amp; designer brief · numbers verified against the source deck · pairs with <a href="index.html" style="color:var(--orange)">the wireframes</a></div>
 
 </div>
+
+<script>
+(function(){
+  var bad1=[3,7,12,18,24,29,31,38,42,47,53,56,61,66,70,74,79,83,86,88,91,95];
+  function grid(el,bad){
+    if(!el)return;
+    for(var i=0;i<100;i++){
+      var d=document.createElement('span');
+      d.className='dot'+(bad.indexOf(i)>-1?' bad':'');
+      el.appendChild(d);
+    }
+  }
+  grid(document.getElementById('grid1'),bad1);
+  grid(document.getElementById('grid9'),[62]);
+
+  var heights=[34,52,41,60,38,72,45,88,30,56,64,42,50,36,70,48,58,33,66,44,
+               39,54,47,62,35,68,43,57,40,74,49,31,60,46,53,37,65,42,59,48,
+               55,32,69,44,51,38,63,47,36,58,41,71,45,34,60,49,43,56,39,67];
+  var bad=[7,17,25,29,41,45,51,55,3,33];
+  var b=document.getElementById('bars2');
+  if(b){
+    for(var j=0;j<60;j++){
+      var i2=document.createElement('i');
+      var isBad=bad.indexOf(j)>-1;
+      i2.style.height=(isBad?Math.min(100,heights[j]+130):heights[j])+'%';
+      if(isBad)i2.className='bad';
+      b.appendChild(i2);
+    }
+  }
+})();
+</script>
 </body>
 </html>
